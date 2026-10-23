@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+  <div class="container">
+    <!-- Brand/Logo -->
+    <a class="navbar-brand fw-bold text-uppercase" href="#">MyBrand</a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Design</a></li>
+            <li><a class="dropdown-item" href="#">Development</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Consulting</a></li>
+          </ul>
+        </li>
+
+        <!-- Right Side Button (e.g., Link to your Login Form) -->
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-outline-light btn-sm px-3" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+    <h1>Hello world</h1>
+
+    <div class="login-container">
+        <h2>Welcome Back</h2>
+        <form action="/login-endpoint" method="POST">
+            <h1>Hello World</h1>
+            <!-- Email Field -->
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email Address</label>
+            </div>
+
+            <!-- Password Field -->
+            <div class="input-group">
+                <input type="password" id="password" name="password" required placeholder=" ">
+                <label for="password">Password</label>
+            </div>
+
+            <!-- Options Row -->
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-btn">Sign In</button>
+
+            <!-- Signup Redirect -->
+            <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
